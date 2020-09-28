@@ -95,10 +95,11 @@ a:hover {
   text-align: center;
   padding: 20px;
   font-size: 24px;
+
 }
 .item1 {
   padding-top: 3px;
-  margin-left: 350px; 
+  margin-left: 410px; 
   height: 200px;
   grid-column: 1 / span 2;
   grid-row: 1;
@@ -108,8 +109,10 @@ a:hover {
   padding-top: 3px;
   font-size: 18px;
   height: 185px;
-  border: 1px solid black;
-  box-shadow: 5px 10px #888888;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 3px;
+  opacity: 1;
   grid-column: 3;
   grid-row: 1 / span 2;
 }
@@ -133,7 +136,7 @@ h3{
 .container{
 background-color: white;
 width: 100%;
-height: auto;
+height: 450px;
 display: grid;
 grid-template-columns: 50%  50%;
 grid-template-rows: 400px 400px;
@@ -158,9 +161,11 @@ input[type=text], select, textarea {
  
   width: 70%;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-sizing: border-box;
+  border: none;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 18px;
+  opacity: 1;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
@@ -170,9 +175,12 @@ input[type=date]{
   
   width: 70%;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-sizing: border-box;
+  border: none;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 18px;
+  opacity: 1;
+  
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
