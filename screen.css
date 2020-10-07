@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #e9ebee;
+  background-color:white;
 }
 * {
   box-sizing: border-box;
@@ -82,27 +82,70 @@ a:hover {
 
 .grid-container{
   display: grid;
-  justify-content: space-between;
-  height: 300px;
-  grid-gap: 30px;
+  height: 18rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
   background-color: white;
   padding: 10px;
 
 }
+.item0{
+    
+}
 
-.grid-item {
+.profile{
+  justify-self: center;
+  align-self: center;
+  
+}
+
+  
+
+.profile h3{
+  font-size: 1.4rem;
+  text-align: center;
+}
+.profile p{
+  text-align: center;
+}
+.menu{
+   justify-self: end;
+   margin-right: 1.2rem;
+   
+}
+.links2 {
+  display: grid;
+  
+  grid-auto-flow: row;
+  grid-gap: 1.8em;
+  font-family: "Open Sans", sans-serif;
+  
+  padding: 2px 16px 0px 14px;
+
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 3px;
+  opacity: 1;
+
+  
+}
+
+
+/*.grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px;
   font-size: 24px;
 
-}
-.item1 {
+}*/
+
+/*.item1 {
   padding-top: 3px;
   margin-left: 410px; 
   height: 200px;
   grid-column: 1 / span 2;
   grid-row: 1;
+  background-color: blue;
 }
 
 .item2 {
@@ -114,42 +157,28 @@ a:hover {
   border-radius: 3px;
   opacity: 1;
   grid-column: 3;
-  grid-row: 1 / span 2;
-}
+  grid-row: 1 / span 2;*/
 
-h3{
-  text-align: center;
-  font-size: 24px;
 
-}
 
-.links2 {
-  display: grid;
-  justify-content: right;
-  align-content: center;
-  grid-auto-flow: row;
-  grid-gap: 1.5em;
-  font-family: "Open Sans", sans-serif;
-}
+
+
+
   
 
-.container{
-background-color: white;
-width: 100%;
-height: 450px;
+.table-container{
 display: grid;
-grid-template-columns: 50%  50%;
-grid-template-rows: 400px 400px;
+grid-template-columns: auto auto;
+grid-template-rows: 1fr 2.5rem;
+
 
 }
 .items1{
-background-color: white;
 
 border-right: 1px solid gray;
 text-align: center;
 }
 .items2{
-background-color: white;
 
 text-align: center;
 }
@@ -164,7 +193,7 @@ input[type=text], select, textarea {
   border: none;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
-  border-radius: 18px;
+  border-radius: 16px;
   opacity: 1;
   margin-top: 6px;
   margin-bottom: 16px;
@@ -178,7 +207,7 @@ input[type=date]{
   border: none;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
-  border-radius: 18px;
+  border-radius: 16px;
   opacity: 1;
   
   margin-top: 6px;
@@ -187,9 +216,124 @@ input[type=date]{
 }
 .alignleft {
   float: left;
-  margin-left: 90px;
+  padding-left: 6.5rem;
 }
 .alignright {
   float: right;
-  margin-right: 135px;
+  margin-right: 6.5rem;
 }
+  .items3{
+   grid-column: 1/ span 2;
+    
+    align-self: center;
+    justify-self: center;
+  }
+  .button {
+  width: 16rem;
+  background-color: #FF724C;
+  margin-top: 1.5rem;
+  color: white;
+  border-radius: 24px;
+  padding: 11px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+ 
+  cursor: pointer;
+}
+
+
+
+
+
+                                 @media screen and (min-width: 320px) and (max-width: 480px) {
+                            .grid-container {
+                                grid-template-columns: 1fr ;
+                            }
+                          .table-container{
+                             grid-template-columns: 1fr 
+                          }
+                           
+                        }
+                        /* Smartphones (portrait) ---------- */
+                        
+                       @media screen and (max-width: 320px) {
+                            .grid-container {
+                                grid-template-columns: 1fr ;
+                            }
+                           .table-container{
+                             grid-template-columns: 1fr  ;
+                          }
+                            
+                        }
+
+                        /* Smartphones (landscape) ---------- */
+                        
+                        @media screen and (min-width: 321px) {
+                             .grid-container {
+                                grid-template-columns: 1fr ;
+                            }
+                         
+                             .table-container{
+                             grid-template-columns: 1fr  ;
+                          }
+                        }
+
+
+
+                        /* Tablets, iPads (portrait and landscape) ---------- */
+                        
+                        @media screen and (min-width: 768px) and (max-width: 1024px) {
+                             .grid-container {
+                                grid-template-columns: 1fr 1fr 1fr ;
+                            }
+                          .table-container{
+                             grid-template-columns: 1fr 1fr ;
+                          }
+                            
+                        }
+                        /* Tablets, iPads (portrait) ---------- */
+                        
+                        @media screen and (min-width: 768px) {
+                             .grid-container {
+                                grid-template-columns: 1fr 1fr 1fr;
+                            }
+                           .table-container{
+                             grid-template-columns: 1fr 1fr ;
+                          }
+                            
+                        }
+                        /* Tablets, iPads (landscape) ---------- */
+                        
+                        @media screen and (min-width: 1024px) {
+                            .grid-container {
+                                grid-template-columns: 1fr 1fr 1fr;
+                            }
+                           .table-container{
+                             grid-template-columns: 1fr 1fr ;
+                          }
+                            
+                        }
+                        /* Desktops and laptops ---------- */
+                        
+                        @media screen and (min-width: 1224px) {
+                             .grid-container {
+                                grid-template-columns: 1fr 1fr 1fr;
+                            }
+                           
+                            .table-container{
+                             grid-template-columns: 1fr 1fr ;
+                          }
+                        }
+                        /* Large screens ---------- */
+                        
+                        @media screen and (min-width: 1824px) {
+                             .grid-container {
+                                grid-template-columns: 1fr 1fr 1fr;
+                            }
+                           
+                            .table-container{
+                             grid-template-columns: 1fr 1fr;
+                          }
+                        }
